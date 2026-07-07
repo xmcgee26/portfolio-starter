@@ -3,8 +3,8 @@
    TODO: Try asking Copilot to suggest a color palette for you.
    ============================================================ */
 :root {
-  --color-bg: #ffffff;
-  --color-bg-alt: #f5f7fa;
+  --color-bg: #000000;
+  --color-bg-alt: #000000;
   --color-text: #1a1a2e;
   --color-text-muted: #555577;
   --color-accent: #f97316;
@@ -12,7 +12,7 @@
   --color-border: #ffffff;
   --font-main: 'Segoe UI', system-ui, sans-serif;
   --radius: 10px;
-  --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow: 0 2px 12px rgb(255, 255, 255);
   --transition: 0.2s ease;
 }
 
