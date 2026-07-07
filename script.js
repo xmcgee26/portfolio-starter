@@ -6,10 +6,10 @@
 // ============================================================
 const projects = [
   {
-    title: "Project One",
-    description: "A short description of what this project does and why you built it.",
-    tags: ["Python", "Flask"],
-    github: "https://github.com/yourusername/project-one",
+    title: "AI Phishing Analysis",
+    description: "Research project investigating how generative AI can be used to craft more convincing phishing messages. I compare human-written and AI-generated samples, identify persuasive linguistic and social-engineering features, evaluate increased risk, and recommend awareness and mitigation strategies.",
+    tags: ["AI Security", "Research", "Cybersecurity"],
+    github: null,
     demo: null,
   },
   {
