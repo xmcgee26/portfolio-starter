@@ -100,7 +100,10 @@ a:hover {
   justify-content: center;
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("hero-bg.jpg") center/cover no-repeat;
+  color: #fff;
 }
 
 .hero-content {
@@ -112,6 +115,7 @@ a:hover {
   font-weight: 800;
   margin-bottom: 1rem;
   line-height: 1.2;
+  animation: heroRise 1s ease-out both;
 }
 
 .highlight {
@@ -120,8 +124,20 @@ a:hover {
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 2rem;
+  animation: heroRise 1s ease-out 0.2s both;
+}
+
+@keyframes heroRise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ============================================================
