@@ -19,12 +19,12 @@ For each entry, note:
 ## Phase 1 — Setup & Orientation
 
 ### Entry 1
-- **Feature/task:** 
-- **Copilot feature used:** 
-- **Prompt:**
+- **Feature/task:** set up my tagline
+- **Copilot feature used:** Inline (Cmd+I)
+- **Prompt:** help me write a 1 sentence tagline that tells a little about who I am. I am currently working on web development. 
   > 
-- **Result:** 
-- **What I changed or did next:** 
+- **Result:** Computer science student learning web development and building thoughtful digital experiences.
+- **What I changed or did next:** I keep the tagline produced by copilot
 
 ---
 
