@@ -102,7 +102,7 @@ a:hover {
   padding: 4rem 2rem;
   background:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("hero-bg.jpg") center/cover no-repeat;
+    url("profilepic.jpg") center/cover no-repeat;
   color: #fff;
 }
 
@@ -110,15 +110,22 @@ a:hover {
   max-width: 700px;
 }
 
-.hero h1 {
+.hero-title {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
   margin-bottom: 1rem;
   line-height: 1.2;
-  animation: heroRise 1s ease-out both;
 }
 
-.highlight {
+.hero-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heroWordRise 0.7s ease-out both;
+  animation-delay: var(--delay);
+}
+
+.hero-word.highlight {
   color: var(--color-accent);
 }
 
@@ -126,10 +133,10 @@ a:hover {
   font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.85);
   margin-bottom: 2rem;
-  animation: heroRise 1s ease-out 0.2s both;
+  animation: heroWordRise 1s ease-out 0.8s both;
 }
 
-@keyframes heroRise {
+@keyframes heroWordRise {
   from {
     opacity: 0;
     transform: translateY(24px);
