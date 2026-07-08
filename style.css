@@ -59,13 +59,13 @@ footer {
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--color-text);
   text-decoration: none;
   transition: color var(--transition);
 }
 
 a:hover {
-  color: var(--color-accent-hover);
+  color: var(--color-text);
 }
 
 /* ============================================================
@@ -108,7 +108,7 @@ a:hover {
 .theme-toggle {
   border: 1px solid var(--color-border);
   background: var(--color-bg-alt);
-  color: #ffffff;
+  color: var(--color-text);
   border-radius: var(--radius);
   padding: 0.6rem 1rem;
   font: inherit;
@@ -192,7 +192,7 @@ a:hover {
   display: inline-block;
   padding: 0.75rem 1.75rem;
   background: var(--color-accent);
-  color: #ffffff !important;
+  color: var(--color-text) !important;
   border-radius: var(--radius);
   font-weight: 600;
   transition: background var(--transition), transform var(--transition);
@@ -205,13 +205,13 @@ a:hover {
 
 .btn-outline {
   background: transparent;
-  color: #ffffff !important;
+  color: var(--color-text) !important;
   border: 2px solid var(--color-accent);
 }
 
 .btn-outline:hover {
   background: var(--color-accent);
-  color: #ffffff !important;
+  color: var(--color-text) !important;
 }
 
 /* ============================================================
@@ -349,6 +349,7 @@ h2::after {
 .project-links a {
   font-size: 0.875rem;
   font-weight: 600;
+  color: var(--color-text);
 }
 
 /* ============================================================
