@@ -4,9 +4,9 @@
    ============================================================ */
 :root {
   --color-bg: #ffffff;
-  --color-bg-alt: #000000;
-  --color-text: #1a1a1a;
-  --color-text-muted: #666666;
+  --color-bg-alt: #ffffff;
+  --color-text: #000000;
+  --color-text-muted: #000000;
   --color-accent: #f97316;
   --color-accent-hover: #ea580c;
   --color-border: #ff8800;
@@ -17,12 +17,12 @@
 }
 
 body[data-theme='dark'] {
-  --color-bg: #0b0b0b;
+  --color-bg: #ffffff;
   --color-bg-alt: #ffffff;
-  --color-text: #ffffff;
-  --color-text-muted: #ffffff;
-  --color-border: #ffffff;
-  --shadow: 0 2px 12px rgba(255, 255, 255, 0.12);
+  --color-text: #000000;
+  --color-text-muted: #000000;
+  --color-border: #000000;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
 }
 
 /* TODO: Add a [data-theme="dark"] block here for dark mode.
