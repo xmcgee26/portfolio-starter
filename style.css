@@ -5,8 +5,8 @@
 :root {
   --color-bg: #ffffff;
   --color-bg-alt: #000000;
-  --color-text: #000000;
-  --color-text-muted: #000000;
+  --color-text: #ffffff;
+  --color-text-muted: #ffffff;
   --color-accent: #f97316;
   --color-accent-hover: #ea580c;
   --color-border: #ff8800;
@@ -18,7 +18,7 @@
 
 body[data-theme='dark'] {
   --color-bg: #0b0b0b;
-  --color-bg-alt: #151515;
+  --color-bg-alt: #ffffff;
   --color-text: #ffffff;
   --color-text-muted: #ffffff;
   --color-border: #ffffff;
