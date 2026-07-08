@@ -5,8 +5,8 @@
 :root {
   --color-bg: #ffffff;
   --color-bg-alt: #000000;
-  --color-text: #ffffff;
-  --color-text-muted: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666666;
   --color-accent: #f97316;
   --color-accent-hover: #ea580c;
   --color-border: #ff8800;
