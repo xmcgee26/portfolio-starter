@@ -46,7 +46,7 @@ body {
 .project-card,
 .contact-intro,
 footer {
-  color: #fff;
+  color: #000;
 }
 
 a {
@@ -88,7 +88,7 @@ a:hover {
 }
 
 .nav-links a {
-  color: #fff;
+  color: #000;
   font-weight: 500;
 }
 
@@ -110,9 +110,9 @@ a:hover {
   text-align: center;
   padding: 4rem 2rem;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
     url("profilepic.jpg") center/cover no-repeat;
-  color: #fff;
+  color: #000;
 }
 
 .hero-content {
@@ -140,7 +140,7 @@ a:hover {
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: #000;
   margin-bottom: 2rem;
   animation: heroWordRise 1s ease-out 0.8s both;
 }
@@ -163,7 +163,7 @@ a:hover {
   display: inline-block;
   padding: 0.75rem 1.75rem;
   background: var(--color-accent);
-  color: #fff !important;
+  color: #000 !important;
   border-radius: var(--radius);
   font-weight: 600;
   transition: background var(--transition), transform var(--transition);
@@ -182,7 +182,7 @@ a:hover {
 
 .btn-outline:hover {
   background: var(--color-accent);
-  color: #fff !important;
+  color: #000 !important;
 }
 
 /* ============================================================
@@ -285,11 +285,11 @@ h2::after {
 .project-card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: #000;
 }
 
 .project-card p {
-  color: #fff;
+  color: #000;
   font-size: 0.95rem;
   margin-bottom: 1rem;
 }
@@ -308,7 +308,7 @@ h2::after {
   background: var(--color-bg-alt);
   border: 1px solid var(--color-border);
   border-radius: 999px;
-  color: #fff;
+  color: #000;
 }
 
 .project-links {
@@ -337,7 +337,7 @@ h2::after {
   border-radius: var(--radius);
   font-size: 0.9rem;
   font-weight: 500;
-  color: #fff;
+  color: #000;
   /* TODO: Ask Copilot to add an emoji or icon prefix to each badge */
 }
 
@@ -345,7 +345,7 @@ h2::after {
    CONTACT
    ============================================================ */
 .contact-intro {
-  color: #fff;
+  color: #000;
   margin-bottom: 2rem;
   font-size: 1.1rem;
 }
@@ -362,7 +362,7 @@ h2::after {
 footer {
   text-align: center;
   padding: 2rem;
-  color: #fff;
+  color: #000;
   font-size: 0.875rem;
   border-top: 1px solid var(--color-border);
 }
