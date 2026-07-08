@@ -111,6 +111,7 @@ a:hover {
   padding: 4rem 2rem;
   background: var(--color-bg);
   color: var(--color-text);
+  border-bottom: 2px solid #000;
 }
 
 .hero-content {
@@ -190,12 +191,14 @@ a:hover {
   padding: 5rem 2rem;
   max-width: 1000px;
   margin: 0 auto;
+  border-top: 2px solid #000;
 }
 
 .section-alt {
   background: var(--color-bg-alt);
   max-width: 100%;
   padding: 5rem 2rem;
+  border-top: 2px solid #000;
 }
 
 .section-alt > * {
