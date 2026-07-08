@@ -17,12 +17,12 @@
 }
 
 body[data-theme='dark'] {
-  --color-bg: #ffffff;
-  --color-bg-alt: #ffffff;
-  --color-text: #000000;
-  --color-text-muted: #000000;
-  --color-border: #000000;
-  --shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  --color-bg: #111111;
+  --color-bg-alt: #1b1b1b;
+  --color-text: #ffffff;
+  --color-text-muted: #e5e5e5;
+  --color-border: #ffffff;
+  --shadow: 0 2px 12px rgba(255, 255, 255, 0.12);
 }
 
 /* TODO: Add a [data-theme="dark"] block here for dark mode.
@@ -192,7 +192,7 @@ a:hover {
   display: inline-block;
   padding: 0.75rem 1.75rem;
   background: var(--color-accent);
-  color: var(--color-text) !important;
+  color: #ffffff !important;
   border-radius: var(--radius);
   font-weight: 600;
   transition: background var(--transition), transform var(--transition);
@@ -205,13 +205,13 @@ a:hover {
 
 .btn-outline {
   background: transparent;
-  color: var(--color-text) !important;
+  color: #ffffff !important;
   border: 2px solid var(--color-accent);
 }
 
 .btn-outline:hover {
   background: var(--color-accent);
-  color: var(--color-text) !important;
+  color: #ffffff !important;
 }
 
 /* ============================================================
@@ -350,6 +350,15 @@ h2::after {
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--color-text);
+}
+
+body[data-theme='dark'] .theme-toggle,
+body[data-theme='dark'] .btn,
+body[data-theme='dark'] .btn-outline,
+body[data-theme='dark'] .project-links a,
+body[data-theme='dark'] .nav-links a,
+body[data-theme='dark'] .nav-logo {
+  color: #ffffff !important;
 }
 
 /* ============================================================
