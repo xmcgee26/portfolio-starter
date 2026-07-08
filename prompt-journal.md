@@ -31,20 +31,20 @@ For each entry, note:
 ## Phase 2 — Guided Tasks
 
 ### Entry 2 — About section
-- **Copilot feature used:** 
-- **Prompt:**
+- **Copilot feature used:** Cmd+I
+- **Prompt:** write a short professional bio for a CS student interested in traveling, learning new things and having fun. keep it warm and approachable, 2-3 sentences. I attend Norfolk State University. 
   > 
-- **Result:** 
-- **What I changed or did next:** 
+- **Result:**  I'm a computer science student at Norfolk State University who enjoys traveling, learning new things, and bringing that curiosity into every project I work on.
+- **What I changed or did next:** I added a professional photo of me to the about me section. 
 
 ---
 
 ### Entry 3 — Projects
-- **Copilot feature used:** 
-- **Prompt:**
+- **Copilot feature used:** Cmd+I
+- **Prompt:** add a project entry for a project that I worked on where I research and explore how AI can be used to generate more convincing phishing messages and why this increases risk. I also compare human-written and AI-generated samples, identify persuasive features, and recommend awareness strategies. 
   > 
-- **Result:** 
-- **What I changed or did next:** 
+- **Result:** Research project investigating how generative AI can be used to craft more convincing phishing messages. I compare human-written and AI-generated samples, identify persuasive linguistic and social-engineering features, evaluate increased risk, and recommend awareness and mitigation strategies.
+- **What I changed or did next:** add a color to a hover animation
 
 ---
 
