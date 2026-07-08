@@ -4,7 +4,7 @@
    ============================================================ */
 :root {
   --color-bg: #ffffff;
-  --color-bg-alt: #ffffff;
+  --color-bg-alt: #000000;
   --color-text: #000000;
   --color-text-muted: #000000;
   --color-accent: #f97316;
