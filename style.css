@@ -78,7 +78,7 @@ a:hover {
 .nav-logo {
   font-weight: 700;
   font-size: 1.2rem;
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 
 .nav-links {
@@ -93,7 +93,7 @@ a:hover {
 }
 
 .nav-links a:hover {
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 
 /* TODO: The nav isn't responsive on mobile yet.
@@ -109,9 +109,7 @@ a:hover {
   justify-content: center;
   text-align: center;
   padding: 4rem 2rem;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url("profilepic.jpg") center/cover no-repeat;
+  background: var(--color-bg);
   color: var(--color-text);
 }
 
@@ -135,7 +133,7 @@ a:hover {
 }
 
 .hero-word.highlight {
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 
 .hero-subtitle {
@@ -213,7 +211,6 @@ h2 {
   display: inline-block;
 }
 
-/* Accent underline on section headings */
 h2::after {
   content: '';
   position: absolute;
@@ -221,7 +218,7 @@ h2::after {
   left: 0;
   width: 40px;
   height: 4px;
-  background: var(--color-accent);
+  background: var(--color-text);
   border-radius: 2px;
 }
 
@@ -338,7 +335,6 @@ h2::after {
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--color-text);
-  /* TODO: Ask Copilot to add an emoji or icon prefix to each badge */
 }
 
 /* ============================================================
