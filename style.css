@@ -16,6 +16,15 @@
   --transition: 0.2s ease;
 }
 
+body[data-theme='dark'] {
+  --color-bg: #0b0b0b;
+  --color-bg-alt: #151515;
+  --color-text: #ffffff;
+  --color-text-muted: #ffffff;
+  --color-border: #ffffff;
+  --shadow: 0 2px 12px rgba(255, 255, 255, 0.12);
+}
+
 /* TODO: Add a [data-theme="dark"] block here for dark mode.
    Copilot can generate this for you — try:
    "Add a dark mode theme using CSS custom properties" */
@@ -94,6 +103,27 @@ a:hover {
 
 .nav-links a:hover {
   color: var(--color-text);
+}
+
+.theme-toggle {
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  border-radius: var(--radius);
+  padding: 0.6rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
 }
 
 /* TODO: The nav isn't responsive on mobile yet.

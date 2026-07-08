@@ -80,12 +80,29 @@ function renderSkills() {
 
 // ============================================================
 // DARK MODE TOGGLE
-// TODO: Implement this! Here's a stub to get you started.
-// Ask Copilot (inline chat on this function): "Implement dark mode
-// toggle that saves preference to localStorage"
 // ============================================================
+const THEME_STORAGE_KEY = "theme";
+
+function getStoredTheme() {
+  return localStorage.getItem(THEME_STORAGE_KEY) || "light";
+}
+
+function applyTheme(theme) {
+  const isDark = theme === "dark";
+  document.body.dataset.theme = isDark ? "dark" : "";
+
+  const toggleButton = document.getElementById("theme-toggle");
+  if (toggleButton) {
+    toggleButton.setAttribute("aria-pressed", String(isDark));
+    toggleButton.textContent = isDark ? "Light Mode" : "Dark Mode";
+  }
+
+  localStorage.setItem(THEME_STORAGE_KEY, isDark ? "dark" : "light");
+}
+
 function toggleDarkMode() {
-  // Your implementation here
+  const currentTheme = document.body.dataset.theme === "dark" ? "dark" : "light";
+  applyTheme(currentTheme === "dark" ? "light" : "dark");
 }
 
 // ============================================================
@@ -104,5 +121,10 @@ document.addEventListener("DOMContentLoaded", () => {
   renderSkills();
   updateYear();
 
-  // TODO: Wire up your dark mode toggle button here once you add it
+  applyTheme(getStoredTheme());
+
+  const toggleButton = document.getElementById("theme-toggle");
+  if (toggleButton) {
+    toggleButton.addEventListener("click", toggleDarkMode);
+  }
 });
