@@ -3,16 +3,16 @@
    TODO: Try asking Copilot to suggest a color palette for you.
    ============================================================ */
 :root {
-  --color-bg: #000000;
-  --color-bg-alt: #000000;
-  --color-text: #ffffff;
-  --color-text-muted: #ffffff;
+  --color-bg: #ffffff;
+  --color-bg-alt: #ffffff;
+  --color-text: #000000;
+  --color-text-muted: #000000;
   --color-accent: #f97316;
   --color-accent-hover: #ea580c;
-  --color-border: #ffffff;
+  --color-border: #ff8800;
   --font-main: 'Segoe UI', system-ui, sans-serif;
   --radius: 10px;
-  --shadow: 0 2px 12px rgb(255, 255, 255);
+  --shadow: 0 2px 12px rgb(0, 0, 0);
   --transition: 0.2s ease;
 }
 
