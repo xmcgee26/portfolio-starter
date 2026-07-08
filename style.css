@@ -139,8 +139,10 @@ a:hover {
   justify-content: center;
   text-align: center;
   padding: 4rem 2rem;
-  background: var(--color-bg);
-  color: var(--color-text);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("chinagif.webp") center/cover no-repeat;
+  color: #ffffff;
   border-bottom: 2px solid #000;
 }
 
@@ -153,35 +155,38 @@ a:hover {
   font-weight: 800;
   margin-bottom: 1rem;
   line-height: 1.2;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+  min-height: 1.4em;
 }
 
-.hero-word {
+.hero-typing {
   display: inline-block;
-  opacity: 0;
-  transform: translateY(24px);
-  animation: heroWordRise 0.7s ease-out both;
-  animation-delay: var(--delay);
+  min-width: 1ch;
+}
+
+.hero-cursor {
+  display: inline-block;
+  margin-left: 0.05em;
+  color: #f97316;
+  animation: cursorBlink 0.8s steps(1) infinite;
 }
 
 .hero-word.highlight {
-  color: var(--color-text);
+  color: #f97316;
 }
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: var(--color-text);
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
   margin-bottom: 2rem;
   animation: heroWordRise 1s ease-out 0.8s both;
 }
 
-@keyframes heroWordRise {
-  from {
+@keyframes cursorBlink {
+  50% {
     opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -393,6 +398,15 @@ body[data-theme='dark'] .nav-logo {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+body:not([data-theme='dark']) .contact-links .btn,
+body:not([data-theme='dark']) .contact-links .btn-outline {
+  color: #000000 !important;
+}
+
+body:not([data-theme='dark']) .contact-links .btn-outline:hover {
+  color: #000000 !important;
 }
 
 /* ============================================================

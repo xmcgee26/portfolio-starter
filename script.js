@@ -82,14 +82,23 @@ function renderSkills() {
 // DARK MODE TOGGLE
 // ============================================================
 const THEME_STORAGE_KEY = "theme";
+const HERO_PHRASE = "Hi, I'm Xavier McGee";
 
 function getStoredTheme() {
-  return localStorage.getItem(THEME_STORAGE_KEY) || "light";
+  try {
+    return localStorage.getItem(THEME_STORAGE_KEY) || "light";
+  } catch (error) {
+    return "light";
+  }
 }
 
 function applyTheme(theme) {
   const isDark = theme === "dark";
-  document.body.dataset.theme = isDark ? "dark" : "";
+  if (isDark) {
+    document.body.setAttribute("data-theme", "dark");
+  } else {
+    document.body.removeAttribute("data-theme");
+  }
 
   const toggleButton = document.getElementById("theme-toggle");
   if (toggleButton) {
@@ -97,12 +106,66 @@ function applyTheme(theme) {
     toggleButton.textContent = isDark ? "Light Mode" : "Dark Mode";
   }
 
-  localStorage.setItem(THEME_STORAGE_KEY, isDark ? "dark" : "light");
+  try {
+    localStorage.setItem(THEME_STORAGE_KEY, isDark ? "dark" : "light");
+  } catch (error) {
+    // Storage can be unavailable on file:// pages or restricted browsers.
+  }
 }
 
 function toggleDarkMode() {
   const currentTheme = document.body.dataset.theme === "dark" ? "dark" : "light";
   applyTheme(currentTheme === "dark" ? "light" : "dark");
+}
+
+// ============================================================
+// HERO TYPEWRITER
+// ============================================================
+function startHeroTypewriter() {
+  const typingElement = document.getElementById("hero-typing");
+  if (!typingElement) return;
+
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (prefersReducedMotion) {
+    typingElement.textContent = HERO_PHRASE;
+    return;
+  }
+
+  let characterIndex = 0;
+  let deleting = false;
+  let pauseUntil = 0;
+
+  const tick = () => {
+    const now = Date.now();
+    if (now < pauseUntil) {
+      requestAnimationFrame(tick);
+      return;
+    }
+
+    if (!deleting) {
+      characterIndex += 1;
+      typingElement.textContent = HERO_PHRASE.slice(0, characterIndex);
+
+      if (characterIndex === HERO_PHRASE.length) {
+        deleting = true;
+        pauseUntil = now + 1200;
+      }
+    } else {
+      characterIndex -= 1;
+      typingElement.textContent = HERO_PHRASE.slice(0, characterIndex);
+
+      if (characterIndex === 0) {
+        deleting = false;
+        pauseUntil = now + 500;
+      }
+    }
+
+    const delay = deleting ? 55 : 85;
+    setTimeout(tick, delay);
+  };
+
+  typingElement.textContent = "";
+  tick();
 }
 
 // ============================================================
@@ -120,6 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderProjects();
   renderSkills();
   updateYear();
+  startHeroTypewriter();
 
   applyTheme(getStoredTheme());
 
