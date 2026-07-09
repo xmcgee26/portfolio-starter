@@ -18,9 +18,15 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
-        Dark Mode
-      </button>
+      <label class="theme-toggle" for="theme-toggle">
+        <span class="theme-toggle-label" id="theme-toggle-label">Dark Mode</span>
+        <span class="theme-toggle-switch" aria-hidden="true">
+          <input class="theme-toggle-input" id="theme-toggle" type="checkbox" />
+          <span class="theme-toggle-track">
+            <span class="theme-toggle-thumb"></span>
+          </span>
+        </span>
+      </label>
     </nav>
 
     <!-- ============================================================

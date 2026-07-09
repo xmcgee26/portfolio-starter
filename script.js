@@ -100,10 +100,15 @@ function applyTheme(theme) {
     document.body.removeAttribute("data-theme");
   }
 
-  const toggleButton = document.getElementById("theme-toggle");
-  if (toggleButton) {
-    toggleButton.setAttribute("aria-pressed", String(isDark));
-    toggleButton.textContent = isDark ? "Light Mode" : "Dark Mode";
+  const toggleInput = document.getElementById("theme-toggle");
+  const toggleLabel = document.getElementById("theme-toggle-label");
+  if (toggleInput) {
+    toggleInput.checked = isDark;
+    toggleInput.setAttribute("aria-label", isDark ? "Light Mode" : "Dark Mode");
+  }
+
+  if (toggleLabel) {
+    toggleLabel.textContent = isDark ? "Light Mode" : "Dark Mode";
   }
 
   try {
@@ -187,8 +192,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   applyTheme(getStoredTheme());
 
-  const toggleButton = document.getElementById("theme-toggle");
-  if (toggleButton) {
-    toggleButton.addEventListener("click", toggleDarkMode);
+  const toggleInput = document.getElementById("theme-toggle");
+  if (toggleInput) {
+    toggleInput.addEventListener("change", toggleDarkMode);
   }
 });
