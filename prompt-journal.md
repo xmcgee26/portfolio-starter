@@ -44,25 +44,25 @@ For each entry, note:
 - **Prompt:** add a project entry for a project that I worked on where I research and explore how AI can be used to generate more convincing phishing messages and why this increases risk. I also compare human-written and AI-generated samples, identify persuasive features, and recommend awareness strategies. 
   > 
 - **Result:** Research project investigating how generative AI can be used to craft more convincing phishing messages. I compare human-written and AI-generated samples, identify persuasive linguistic and social-engineering features, evaluate increased risk, and recommend awareness and mitigation strategies.
-- **What I changed or did next:** add a color to a hover animation
+- **What I changed or did next:** start the dark mode feature
 
 ---
 
 ### Entry 4 — Dark mode
-- **Copilot feature used:** 
-- **Prompt:**
+- **Copilot feature used:** Cmd+I
+- **Prompt:** create a dark mode feature for my portfolio site that switches the page colors when I click a button, uses a data-theme attribute on the body, and saves the choice so it stays after I reload the page. make it match the rest of my simple HTML, CSS, and JavaScript project.
   > 
-- **Result:** 
-- **What I changed or did next:** 
+- **Result:** Copilot helped me add a working theme toggle button, a dark theme using CSS custom properties, and JavaScript that switches the body theme and remembers the user’s choice in localStorage.
+- **What I changed or did next:** I tested the button, then fixed the colors so the dark mode actually looked different and the text stayed visible on the background.
 
 ---
 
 ### Entry 5 — Responsive layout
-- **Copilot feature used:** 
-- **Prompt:**
+- **Copilot feature used:** Cmd+I
+- **Prompt:** improve the responsive layout for my portfolio site so it still looks good on smaller screens, especially the navigation, hero section, about section, project cards, and contact buttons. keep the design simple and make sure the text stays readable.
   > 
-- **Result:** 
-- **What I changed or did next:** 
+- **Result:** Copilot suggested mobile-friendly spacing and section adjustments, and helped me think through how the layout should stack on smaller screens.
+- **What I changed or did next:** I updated the CSS by hand to make the layout fit better on mobile and checked that the text and buttons stayed readable.
 
 ---
 
